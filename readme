@@ -1,0 +1,20 @@
+FMV-181/182/183/184 configuration tool
+2024 mcDomDom
+
+usage: fmv18xct (-IRQ=x) (-IO=0xXXX) (-ON/-OFF)
+  FMV-181/182 IRQ:3/7/10/15
+  FMV-183/184 IRQ:4/5/10/11
+  I/O:0x220/0x240/0x260/0x280/0x2A0/0x2C0/0x300/0x340
+  -ON is PnP On
+  -OFF is PnP Off
+  PnP is FMV-183/184 only
+
+FMV TOWNS recommends IRQ 10 and I/O 0x240 PnP Off
+
+Build:
+  OpenWatcom v2 compiled
+  wcl fmv18xct.c
+
+Test Environment:
+  FMV TOWNS Model SB + FMV-181 ISA Card
+  FMV TOWNS Model SH20 + FMV-183 Addon Card
